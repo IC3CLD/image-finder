@@ -1,17 +1,20 @@
 body {
   /* background-color: black; */
   /* color: wheat; */
-
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ1z_8pgX-RVy3xGF7jrW_YjfgnWAFupVZh4w&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: peru;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 .gallery {
   display: flex;
   flex-wrap: wrap;
 }
 
-.loadmore-button{
+.loadmore-button {
   padding: 10px, 10px;
   font-size: 25px;
   display: block;
@@ -19,13 +22,31 @@ ul {
   margin-right: auto;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 img {
-  width: 300px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 li {
-  width: 300px;
+  width: 350px;
   margin: 20px;
+  background-color: teal;
+  border-radius: 10%;
+}
+.search-form {
+  width: 300px;
+}
+.photo-box{
+  height: 200px;
+  overflow: hidden;
+}
+.stats{
+  padding: 15px;
+} 
+form{
+  margin-left: auto;
+  margin-right: auto;
 }
