@@ -12,11 +12,16 @@ export default {
     page: 1,
     perPage: 12,
     
-    fetchImages() {
-        let url = `${baseUrl}?image_type=photo&orientation=horizontal&q=${this._query}&page=${this.page}&per_page=${this.perPage}&key=${Api_key}`;
-        return fetch(url)
-        .then(res => res.json())
-        .catch(error => displayError(error))
+  async fetchImages() {
+      let url = `${baseUrl}?image_type=photo&orientation=horizontal&q=${this._query}&page=${this.page}&per_page=${this.perPage}&key=${Api_key}`;
+      try{
+          const res = await fetch(url);
+          const getResponse = res.json();
+          return getResponse
+      }
+      catch(error){
+          throw displayError(error)
+      }
     },
     setPage(){
         return this.page++;

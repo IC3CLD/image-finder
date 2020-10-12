@@ -4,10 +4,7 @@ import template from "../template/template.hbs";
 import debounce from "lodash.debounce";
 import * as basicLightbox from "basiclightbox";
 import "../../node_modules/basiclightbox/dist/basiclightbox.min.css";
-
-// console.log(refs);
-
-// console.log(apiService.fetchImages());
+import "@babel/polyfill"
 
 refs.galleryList.addEventListener(`click`, (event) => {
   if (event.target.nodeName === "IMG") {
