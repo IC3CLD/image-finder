@@ -29,6 +29,7 @@ refs.input.addEventListener(
     apiService.query = event.target.value;
     renderApi();
     refs.input.value = "";
+    refs.galleryList.innerHTML = "";
   }, 500),
 );
 
